@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #37367A;
+  background: #fff;
 }
 
 h1 {
@@ -67,9 +67,9 @@ button.invalid {
   cursor: not-allowed;
 }
 
-button:hover {
+/*button:hover {
   background: linear-gradient(to bottom, #080927, #0f356d);
-}
+}*/
 
 /* Estilo para o botão Calcular */
 #calcularBtn {
