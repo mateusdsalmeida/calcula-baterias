@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Definindo uma variável para receber as definições de cores de texto padrão*/
+
+
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -60,12 +70,12 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-
+/*
 button:disabled,
 button.invalid {
   background: #ccc;
   cursor: not-allowed;
-}
+}*/
 
 /*button:hover {
   background: linear-gradient(to bottom, #080927, #0f356d);
@@ -106,6 +116,6 @@ input[type="number"] {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 50px;
   margin-bottom: 20px;
 }
