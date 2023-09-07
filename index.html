@@ -7,14 +7,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="assets/icon.png" type="image/x-icon" />
     <meta charset="UTF-8" />
-    <meta name="Calcula Baterias" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcula Baterias</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <img src="logo.png" alt="Logo da Empresa" class="logo" />
+      <img src="/assets/logo.png" alt="Logo da Empresa" class="logo" />
       <h1>Calcula Baterias</h1>
       <div class="input-container">
         <input
@@ -40,12 +41,15 @@
           placeholder="Digite o valor da sucata"
         />
         <div class="button-container">
-          <button id="calcularBtn" onclick="calcular()" >Calcular</button>
-          <button id="limparBtn" onclick="limparCampos()" >Limpar</button>
-      </div>
+          <button id="calcularBtn" onclick="calcular()">Calcular</button>
+          <button id="limparBtn" onclick="limparCampos()">Limpar</button>
+        </div>
       </div>
       <div class="resultado-container"></div>
-        <div id="resultado" class="resultado"></div>
+      <div id="resultado"></div>
+      <div id="recado">
+        Feito com carinho 🖤 <br />
+        para uma grande amiga!
       </div>
     </div>
     <script src="script.js"></script>

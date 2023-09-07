@@ -4,9 +4,20 @@
   box-sizing: border-box;
 }
 
-/*Definindo uma variável para receber as definições de cores de texto padrão*/
+/*Definindo uma variável para receber as definições de cores e texto padrão*/
+:root {
+  /* Definições de cores*/
+  --txt-color: white;
+  --txt-head-color: #333;
+  --bg-color-out: white;
+  --bg-color-inside: #f9f9f9;
+  --border-color: #ccc;
 
-
+  --bt-color-calc: rgba(0, 128, 0, 1);
+  --bt-hover-calc: rgba(0, 80, 0, 1);
+  --bt-color-reset: rgba(255, 0, 0, 1);
+  --bt-hover-reset: rgba(180, 0, 0, 1);
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -16,33 +27,28 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #fff;
-}
-
-h1 {
-color: #333;
-}
-
-input[type="text"] {
-  padding: 5px;
-  font-size: 16px;
+  background: var(--bg-color-out);
 }
 
 /* Estilo para o container principal */
 .container {
   text-align: center;
-  margin: 20px auto;
-  padding: 20px;
   width: 300px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  border-radius: 5px;
+  margin: 20px auto 0px;
+  padding: 20px;
+  background-color: var(--bg-color-inside);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
 }
 
-/* Estilo para o logotipo */
+h1 {
+  color: var(--txt-head-color);
+}
+
+/* Estilo para o ícone da logotipo*/
 .logo {
-  max-width: 100%;
-  height: auto;
+  max-width: 50px;
+  margin-bottom: 20px;
 }
 
 /* Estilo para o cabeçalho */
@@ -60,53 +66,37 @@ h1 {
 }
 
 /* Estilo para os botões */
-
 button {
+  width: 125px;
+  height: 40px;
   padding: 10px 20px;
   font-size: 16px;
-  /*background: linear-gradient(to bottom, #1258a5, #0f356d);*/
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-/*
-button:disabled,
-button.invalid {
-  background: #ccc;
-  cursor: not-allowed;
-}*/
-
-/*button:hover {
-  background: linear-gradient(to bottom, #080927, #0f356d);
-}*/
-
-/* Estilo para o botão Calcular */
-#calcularBtn {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  color: var(--txt-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
 }
 
+/* Estilo específico para o botão Calcular */
+#calcularBtn {
+  background-color: var(--bt-color-calc);
+}
+
+#calcularBtn a:hover {
+  background-color: var(--bt-hover-calc);
+}
+
+/* Estilo específico para o botão Limpar */
 #limparBtn {
-    padding: 10px 20px;
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: var(--bt-color-reset);
 }
 
 /* Estilo para os campos de entrada de texto */
 input[type="number"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
 }
 
@@ -115,7 +105,8 @@ input[type="number"] {
   margin-top: 20px; /* Ajuste o valor conforme necessário para a margem superior */
 }
 
-.logo {
-  max-width: 50px;
-  margin-bottom: 20px;
+/* Propriedades do rodapé (Mensagem dedicatória)*/
+#recado {
+  margin-top: 20px;
+  font-size: 10px;
 }
