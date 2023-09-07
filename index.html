@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="Calcula Baterias"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Calcula Baterias</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.png" alt="Logo da Empresa" class="logo" />
+      <h1>Calcula Baterias</h1>
+      <div class="input-container">
+        <input
+          type="number"
+          id="vrpedido"
+          placeholder="Digite o valor do pedido"
+        />
+        <input
+          type="number"
+          id="desconto"
+          placeholder="Digite a taxa de desconto (%)"
+        />
+        <input
+          type="number"
+          id="adicional"
+          placeholder="Digite o valor adicional (%)"
+          value="3"
+        />
+        <input
+          type="number"
+          id="sucata"
+          placeholder="Digite o valor da sucata"
+        />
+        <div class="button-container">
+          <button id="calcularBtn" onclick="calcular()" disabled>Calcular</button>
+          <button id="limparBtn" onclick="limparCampos()" >Limpar</button>
+      </div>
+      </div>
+      <div class="resultado-container"></div>
+        <div id="resultado" class="resultado"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
