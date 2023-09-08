@@ -7,38 +7,42 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="assets/icon.png" type="image/x-icon" />
+    <link rel="icon" href="/assets/icon.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcula Baterias</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <img src="/assets/logo.png" alt="Logo da Empresa" class="logo" />
+      <img src="./assets/logo.png" alt="Logo" class="logo" />
       <h1>Calcula Baterias</h1>
       <div class="input-container">
         <input
           type="number"
           id="vrpedido"
           placeholder="Digite o valor do pedido"
+          inputmode="numeric"
           autofocus
         />
         <input
           type="number"
           id="desconto"
           placeholder="Digite a taxa de desconto (%)"
+          inputmode="numeric"
         />
         <input
           type="number"
           id="adicional"
           placeholder="Digite o desconto adicional (%)"
           value="3"
+          inputmode="numeric"
         />
         <input
           type="number"
           id="sucata"
           placeholder="Digite o valor da sucata"
+          inputmode="numeric"
         />
         <div class="button-container">
           <button id="calcularBtn" onclick="calcular()">Calcular</button>
@@ -48,10 +52,26 @@
       <div class="resultado-container"></div>
       <div id="resultado"></div>
       <div id="recado">
-        Feito com carinho 🖤 <br />
-        para uma grande amiga!
+        Feito com carinho
       </div>
+      <div id="social-links">
+        <a
+          href="https://github.com/mateusdsalmeida/calcula-baterias"
+          target="_blank"
+        >
+      </div>
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
     </div>
     <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
   </body>
 </html>

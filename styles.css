@@ -83,13 +83,17 @@ button {
   background-color: var(--bt-color-calc);
 }
 
-#calcularBtn a:hover {
+#calcularBtn:hover {
   background-color: var(--bt-hover-calc);
 }
 
 /* Estilo específico para o botão Limpar */
 #limparBtn {
   background-color: var(--bt-color-reset);
+}
+
+#limparBtn:hover {
+  background-color: var(--bt-hover-reset);
 }
 
 /* Estilo para os campos de entrada de texto */
@@ -109,4 +113,9 @@ input[type="number"] {
 #recado {
   margin-top: 20px;
   font-size: 10px;
+}
+
+#social-links {
+  display: flex;
+  padding: 5px;
 }
