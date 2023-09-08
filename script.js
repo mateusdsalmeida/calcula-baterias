@@ -16,6 +16,7 @@ function calcular() {
   // Realize os cálculos
   var vrfinal =
     (vrpedido - (vrpedido * desconto) / 100) * (1 - adicional / 100) + sucata
+  var descbase = ((vrpedido - vrfinal / (1 - adicional / 100)) / vrpedido) * 100
   var descfinal = (1 - vrfinal / vrpedido) * 100
 
   // Exiba os resultados
@@ -23,6 +24,8 @@ function calcular() {
   resultadoDiv.innerHTML =
     "Valor Final: " +
     vrfinal.toFixed(2) +
+    "<br>Desconto base (%): " +
+    descbase.toFixed(3) +
     "<br>Desconto Final (%): " +
     descfinal.toFixed(2)
 }

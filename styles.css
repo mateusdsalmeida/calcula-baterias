@@ -41,19 +41,16 @@ body {
   border-radius: 10px;
 }
 
+/* Estilo para o cabeçalho */
 h1 {
   color: var(--txt-head-color);
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 /* Estilo para o ícone da logotipo*/
 .logo {
   max-width: 50px;
-  margin-bottom: 20px;
-}
-
-/* Estilo para o cabeçalho */
-h1 {
-  font-size: 24px;
   margin-bottom: 20px;
 }
 
