@@ -24,10 +24,10 @@ function calcular() {
   resultadoDiv.innerHTML =
     "Valor Final: " +
     vrfinal.toFixed(2) +
-    "<br>Desconto base (%): " +
+    "<br>Desconto Base (%): " +
     descbase.toFixed(3) +
-    "<br>Desconto Final (%): " +
-    descfinal.toFixed(2)
+    "<br>Desconto Global (%): " +
+    descfinal.toFixed(3)
 }
 
 // Função para limpar os campos
